@@ -1,0 +1,10 @@
+<p>First Ruby on Rails App</p>
+<p>Made with RubyMine</p>
+
+<ul>
+  <% @articles.each do |article| %>
+      <strong><%= article.title %></strong>
+      <p><%= article.content %></p>
+      <%= link_to "Show", article_path(article.id) %>
+  <% end %>
+</ul>
